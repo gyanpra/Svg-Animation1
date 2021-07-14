@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#head {
+  animation: headframe 3s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#hand {
+  animation: handframe 5s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#tick {
+  animation: tickframe 5s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes tickframe {
+  0% {
+    transform: scale(0.5) translateY(0, 200px);
+  }
+  25% {
+    transform: scale(0.3) translate(0, -120px);
+  }
+  50% {
+    transform: scale(0.3) translate(80px, -120px);
+  }
+  75% {
+    transform: scale(0.3) translate(80px, 70px);
+  }
+
+  100% {
+    transform: scale(0.4) translate(10px, 70px);
+  }
+}
+
+@keyframes handframe {
+  from {
+    transform: scale(0.9) translateY(0%);
+  }
+  to {
+    transform: scale(1) translateY(5%);
+  }
+}
+
+@keyframes headframe {
+  000% {
+    transform: rotate(0deg);
+  }
+  020% {
+    transform: rotate(-3deg);
+  }
+  040% {
+    transform: rotate(-6deg);
+  }
+  60% {
+    transform: rotate(-9deg);
+  }
+  80% {
+    transform: rotate(-6deg);
+  }
+  90% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
